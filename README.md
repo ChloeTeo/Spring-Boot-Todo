@@ -14,7 +14,7 @@ Setup:
    in your MySQL provided that your MySQL port is 3306.
    - spring.datasource.url = jdbc:mysql://localhost:3306/tododb
 
-3. And go to MySQL and create a table called "todo" as the model has an entity called "todo"
+3. And go to MySQL and create a table called "todo" under the database "tododb" as the model has an entity called "todo"
 
 5. And remember to set the password of your MySQL to be able to access the database.
 
