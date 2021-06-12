@@ -14,6 +14,8 @@ Setup:
    in your MySQL provided that your MySQL port is 3306.
    - spring.datasource.url = jdbc:mysql://localhost:3306/tododb
 
-3. And remember to set the password of your MySQL to be able to access the database.
+3. And go to MySQL and create a table called "todo" as the model has an entity called "todo"
 
-4. Then you may run the application in src/main/java/com.spring.todo.todoAPI/TodoApiApplication and go to localhost:8080/index to access the webpage.
+5. And remember to set the password of your MySQL to be able to access the database.
+
+5. Then you may run the application in src/main/java/com.spring.todo.todoAPI/TodoApiApplication and go to localhost:8080/index to access the webpage.
