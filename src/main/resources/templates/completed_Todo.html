@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Todo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        h2, ul, form{padding: 20px;}
+    </style>
+</head>
+    <h2 align="center">My Todo List</h2>
+<body>
+    <div class="container width=80%">
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/addTodo}">Add</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/index}">Current</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Complete</a>
+                    </li>
+                </ul>
+
+                <div class="container width=90%">
+                    <table class="table table-striped table-responsive-md">
+                        <thead align="center">
+                        <tr>
+                            <th width="50%">Task</th>
+                            <th>Completed Date</th>
+                        </tr>
+                        </thead>
+                        <tbody align="center">
+                        <tr th:each="todo: ${todoComp}">
+                            <td th:text="${todo.task}"></td>
+                            <td th:text="${todo.complete_date}"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
