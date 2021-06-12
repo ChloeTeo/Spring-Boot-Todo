@@ -47,7 +47,7 @@
                             <tr th:each="cur_todo: ${current_todo}">
                                 <td width="50%" th:text="${cur_todo.task}"></td>
                                 <td width="20%">
-                                    <button class="btn" th:href="@{/editTask/{pId}(pId=${cur_todo.id})}"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn" th:action="@{/editTask/{pId}(pId=${cur_todo.id})}"><i class="fa fa-pencil"></i></button>
                                 </td>
                                 <td width="20%">
                                     <form action="#" th:action="@{/delete/{pId}(pId=${cur_todo.id})}" method="post">
