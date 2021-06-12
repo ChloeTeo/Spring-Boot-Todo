@@ -1,6 +1,11 @@
 # Spring-Boot-Todo
 Using Spring Boot and Thymeleaf for a simple todo page
 
+Prerequisite:
+1. Java 8 or above
+2. MySQL
+3. Java IDE
+
 1. Download the code and open it using your preference IDE.
 
 2. Go to src/main/java/resources/application.properties to edit the spring data source and change the 'tododb' to a new database or you create a database called 'tododb'
