@@ -1,4 +1,6 @@
 # Spring-Boot-Todo
+For detail explanation, go to this blog -> https://pclearningjourney.wordpress.com/2021/06/13/spring-boot-rest-api-integrated-with-mysql-via-jpa-todo-application/
+
 Using Spring Boot and Thymeleaf for a simple todo page
 
 Prerequisite:
