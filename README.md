@@ -10,9 +10,9 @@ Prerequisite:
 
 
 Setup:
-1. Download the code and open it using your preference IDE.
+1. Download the code and open it using your preferred IDE.
 
-2. Go to src/main/java/resources/application.properties to edit the spring data source and change the 'tododb' to a new database or you create a database called 'tododb'
+2. Go to src/main/java/resources/application.properties to edit the spring data source and change the 'tododb' to a new database or you may create a new database called 'tododb'
    in your MySQL provided that your MySQL port is 3306.
    - spring.datasource.url = jdbc:mysql://localhost:3306/tododb
 
